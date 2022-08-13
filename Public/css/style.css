@@ -1,13 +1,50 @@
-section{
-    width: 600px;
-    margin: 10px 10px 10px 10px;
-    border: solid 2px hotpink;
-}
 
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Montserrat:ital,wght@0,300;0,400;0,500;1,400&family=Roboto:wght@300&family=Source+Sans+Pro:wght@200;600&display=swap');
+/*Layout*/
+#container{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: auto;
+    height: fit-content;
+}
+.todolists{
+    width: 400px;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    border: solid 2px hotpink;
+    
+}
+/*Style*/
 h1{
-    color: red;
+    color: hotpink;
+    font-size: 3rem;
+    text-align: center;
+    font-family: Mochiy Pop One, Montserrat;
+}
+h2{
+    color: hotpink;
+    font-size: 1.5rem;
+    font-family: Mochiy Pop One, Montserrat;
+}
+h3{
+    font-size: 1rem;
+    color: rgb(171, 72, 160);
 }
 .completed{
-    color: gray;
+    color: rgb(189, 111, 168);
     text-decoration: line-through;
+}
+.fa {
+    color: rgb(85, 3, 89);
+}
+li {
+    list-style:disc;
+    color: rgb(134, 4, 141) ;
+}
+span {
+    font-size: 1.25rem;
 }
