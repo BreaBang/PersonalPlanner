@@ -50,7 +50,7 @@ span {
 }
 .btn-submit{
     display: inline-block;
-    border: 1px purple solid;
+    border: 2px purple solid;
     color: white;
     background-color: pink;
     box-shadow: 3px 1px 0px rgb(211, 207, 209);
@@ -59,8 +59,8 @@ span {
     text-align: center;
     line-height: normal;
     background: linear-gradient(90deg,#730963 0,#e57de5 100%);
-    border-radius: 50px;
-    transition: color .2s ease,background-color .2s ease,box-shadow .2s ease;
+    border-radius: 60px;
+    transition: color .2s ease, background-color .2s ease, box-shadow .2s ease;
     :hover{
         box-shadow: 0 0 0 0.15rem #5ceace;
     }
@@ -69,6 +69,7 @@ span {
 
 .formbox{
     padding: 7px;
+    margin: 3px 3px 3px 3px;
     border-radius: 6px;
     font-size: 1rem;
     background: #fbfbfb;
