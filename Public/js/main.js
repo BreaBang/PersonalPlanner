@@ -1,6 +1,10 @@
 const deleteBtn = document.querySelectorAll('.fa-trash')
 const item = document.querySelectorAll('.item span') 
+const weeklyItem = document.querySelectorAll('.weeklyItem span')
+const monthlyItem = document.querySelectorAll('.monthlyItem span')
 const itemCompleted = document.querySelectorAll('.item span.completed')
+const weeklyCompleted = document.querySelectorAll('.item span.completedWeekly')
+const monthlyCompleted = document.querySelectorAll('.item span.completedMonthly')
 
 Array.from(deleteBtn).forEach((element)=>{
     element.addEventListener('click', deleteItem)
@@ -9,8 +13,20 @@ Array.from(deleteBtn).forEach((element)=>{
 Array.from(item).forEach((element)=>{
     element.addEventListener('click', markComplete)
 })
+Array.from(weeklyItem).forEach((element)=>{
+    element.addEventListener('click', markComplete)
+})
+Array.from(monthlyItem).forEach((element)=>{
+    element.addEventListener('click', markComplete)
+})
 
 Array.from(itemCompleted).forEach((element)=>{
+    element.addEventListener('click', markUnComplete)
+})
+Array.from(weeklyComplete).forEach((element)=>{
+    element.addEventListener('click', markUnComplete)
+})
+Array.from(monthlyCompleted).forEach((element)=>{
     element.addEventListener('click', markUnComplete)
 })
 
