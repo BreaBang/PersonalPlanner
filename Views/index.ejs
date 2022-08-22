@@ -53,9 +53,9 @@
     <h2>To do:</h2>
     <ul class="todoItems">
         <% for(let i=0; i < items.length; i++) {%>
-            <li class="item">
+            <li class="weeklyItem">
                 <% if(items[i].completed === true) {%>
-                    <span class='completed'><%= items[i].thing %></span>
+                    <span class='weeklyCompleted'><%= items[i].thing %></span>
                 <% }else{ %>
                     <span><%= items[i].thing %></span>
                 <% } %>    

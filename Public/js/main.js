@@ -23,7 +23,7 @@ Array.from(monthlyItem).forEach((element)=>{
 Array.from(itemCompleted).forEach((element)=>{
     element.addEventListener('click', markUnComplete)
 })
-Array.from(weeklyComplete).forEach((element)=>{
+Array.from(weeklyCompleted).forEach((element)=>{
     element.addEventListener('click', markUnComplete)
 })
 Array.from(monthlyCompleted).forEach((element)=>{
