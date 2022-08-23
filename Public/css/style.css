@@ -85,9 +85,6 @@ span {
     background: linear-gradient(90deg,#730963 0,#e57de5 100%);
     border-radius: 60px;
     transition: color .2s ease, background-color .2s ease, box-shadow .2s ease;
-    :hover{
-        box-shadow: 0 0 0 0.15rem #5ceace;
-    }
     
 }
 
@@ -100,9 +97,5 @@ span {
     border: 2px solid transparent;
     height: 16px;
     box-shadow: 0 0 0 1px #dddddd, 0 2px 4px 0 rgb(0 0 0 / 7%), 0 1px 1.5px 0 rgb(0 0 0 / 5%);
-    :focus{
-        border: 2px solid #000;
-        border-radius: 4px;
-    }
 
 }
