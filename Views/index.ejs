@@ -23,6 +23,7 @@
 <body>
     <section id="container">
     <h1>Personal Planner</h1>
+
     <section class="todolists">
     <h2>To do:</h2>
     <ul class="todoItems">
@@ -37,40 +38,14 @@
         </li>
     <% } %>
     </ul>
-
     <h2>Left to do: <%= left %></h2>
-
     <h2>Add A Todo:</h2>
-
     <form action="/addTodo" method="POST">
         <input type="text" placeholder="Daily Thing To Do" name="todoItem" class="formbox">
         <input type="submit" class="btn-submit">
     </form>
     </section>
 
-    <%# Weekly Items List %>
-    <section class="todolists">
-    <h2>To do:</h2>
-    <ul class="todoItems">
-        <% for(let i=0; i < items.length; i++) {%>
-            <li class="weeklyItem">
-                <% if(items[i].completed === true) {%>
-                    <span class='weeklyCompleted'><%= items[i].thing %></span>
-                <% }else{ %>
-                    <span><%= items[i].thing %></span>
-                <% } %>    
-                <span class='fa fa-trash'></span>
-            </li>
-        <% } %>
-        </ul>
-         
-        <h2>Left to do: <%= left %></h2>
-        <h2>Add A Todo:</h2>
-    <form action="/addWeeklyTodo" method="POST">
-        <input type="text" placeholder="Weekly Thing To Do" name="weeklyToDoItem" class="formbox">
-        <input type="submit" class="btn-submit">
-    </form>
-</section>
 </section>
     <script src='js/main.js'></script>
 </body>
