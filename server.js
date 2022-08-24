@@ -4,7 +4,7 @@ const app = express();
 //Requires the server to use MongoDB
 const MongoClient = require('mongodb').MongoClient
 //This is the local port
-const PORT = 8000
+const port = process.env.PORT || 8000
 //Requires the server to use env and configures it.
 require('dotenv').config()
 
@@ -103,7 +103,7 @@ app.get('/',async (request, response)=>{
 
 //SERVER//
     //The process.env.PORT lets Heroku run our app on any server they want. The PORT is the local server defined above. 
-    app.listen(process.env.PORT || PORT, ()=>{
+    app.listen(port, ()=>{
         //This console log message will let us know the server is working properly.
-        console.log(`Server running on port ${PORT}`)
+        console.log(`Server running on port ${port}`)
     })
